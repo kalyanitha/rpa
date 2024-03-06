@@ -1,0 +1,89 @@
+2A] Automate Uipath Number Calculation (Subtraction, Multiplication, Division Of Numbers).
+
+Step1
+
+Open UiPath Studio -> Start -> New Project-> Click Process
+
+
+Step 2
+
+Now, create a New Blank Process, name it UiArithmatic and give it a description
+
+Step 3
+
+After that, UiPath studio creates the project UiArithmatic with the supporting files:
+
+
+Step 4
+
+Next, to perform arithmetic operations:
+
+Double-click the Main.xaml workflow, Click Activities -> search Input Dialog ->Drag and drop it into the sequence
+
+For reading the First Number, set the values Display name, Label, Title, Result (for the result value, go to variables tab and create a variable Num1 in the property window)
+
+Similarly, create one more Input Dialog for Second Number, set the values Display name, Label, Title, Result (for the result value, go to variables tab and create a variable Num2 in the property window).
+
+
+Step 5
+
+For Arithmetic operations:
+Click Activities -> search message box -> Drag and drop it into the sequence, then edit the text in 4 message boxes Addition, Subtraction, Multiplication, and Division,
+
+Step 5
+
+To run your project, select debug file -> Run, The output of the UiArithmatic project is: Read the First Number: 
+
+Read the Second Number:
+
+The result of the arithmetic operation is:
+Conclusion :Thus We Have Studied To Automate Uipath Number Calculation (Subtraction, Multiplication, Division Of Numbers).
+
+
+
+
+
+
+2B] Create An Automation Uipath Project Using Different Types Of Variables (Number, Datetime, Boolean, Generic, Array, Data Table).
+Create Variables
+To create variables in UiPath, the following are the two options available.
+
+•	Select an activity and press on Ctrl + K in the output section of the Properties Pane.
+•	Click on the Variable Pane as below.
+
+Remove Variables
+To remove variables in UiPath, the following are the two options available.
+
+•	Choose variable from Variable Pane -> Right Click -> Choose Delete.
+•	Choose the option “Remove Unused Variables” from Design Tab.
+
+The first option would remove only the selected variable and the second option would remove all the unused variables in the sequence.
+
+Manage Variables
+To manage variables in UiPath, the following are the two parameters you have to consider. Refer below.
+
+•	Mention the Scope of the Variable.
+•	Mention the Default value(You do not have to mention the default value for each and every variable).
+
+Now, let us move forward and see the various types of variables. Types of Variables
+The various types of variables are as follows:
+
+•	Text Variables – This type of variables is used to store the text values.
+•	True/False Variables – This type of variables is used to store Boolean values.
+•	Number Variables – This type of variables is used to store Integer values.
+•	Array Variables – This type of variables is used to store an array of integers or string.
+•	Date and Time Variables – This types of variables is used to store date and time variables.
+•	Data Table Variables – This type of variables is used to store Data Table, which stores the values in the form of table.
+
+ 
+•	Generic Variables – This type of variables is used to store generic type such as Mail Merge, Database etc.
+
+
+Now, let us move forward to the next topic i.e. Data Types in UiPath. Data Types InUiPath
+Data Types classify the type of the value of the variable. In UiPath, it could either be an Integer, String, Boolean, Generic or an Array Of.
+
+So, to choose the data type of the variables, you have to go to the Variable Pane and then choose the Variable Type. Refer below.
+
+Conclusion :Thus we have studied to Create An Automation Uipath Project Using Different Types Of Variables (Number, Datetime, Boolean, Generic, Array, Data Table).
+
+
