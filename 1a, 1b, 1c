@@ -1,0 +1,66 @@
+
+1A] Create a simple sequence based project.
+
+
+1.	Create a blank project and, on the Design tab, in the File group, select New > Sequence. The New Diagram window is displayed.
+
+Note:
+You can also add a Sequence activity to the Designer panel to create a new sequence.
+
+2.	In the Name field type a name for the automation, such as "First Sequence," and click Create. The Designer panel is updated accordingly.
+3.	Create three String variables such as strFirstName, strLastName, and strHairColor, so that you can store data from the user in them. Leave the Default field empty, to indicate that there is no default value.
+
+
+4.	Drag three Input Dialog activities to the Designer panel, one under the other.
+5.	Select the first Input Dialog and, in the Properties panel, add a Label asking for the first name of the user, and a custom Title.
+6.	In the Result field add the strFirstName variable. This indicates that this variable is going to be updated with the value added by the user at this point.
+7.	Repeat steps 6 - 7 for the second and third Input Dialog activities to ask the user for his last name and hair color, and store them in the strLastName and strHairColor variables.
+8.	Add a Message Box activity under the third Input Dialog.
+9.	Select the Message Box and, in the Properties panel, in the Text field, add the variables and a string to enable  you  to  display  all  information  gathered  from  the  user,  such  as: strFirstName + " " + strLastName + " has " + strHairColor + " hair.
+
+10.	On the Design tab, in the File group, click Run. The automation is executed. The final output message should look as in the following screenshot.
+
+Conclusion : Thus we have studied to create a simple sequence based project.
+
+
+
+
+1B )Create A Flowchart-Based Project.
+
+
+1.	Click on Open main workflow. Drag and drop flowchart from activities panel.
+2.	Drag and drop input Dialog inside a flowchart
+3.	Drag and drop message box inside a flowchart.
+4.	then Double click on input dailog and fill the details
+ =
+
+
+
+1C] Create an UiPath Robot which can empty a folder in Gmail solely on basis of recording.
+STEPS:- 
+
+1.	Open Browser: Although we have already opened Gmail in the browser, we did not record that step. Here, we will note that step in the recorder using the Open Browser button in the recorder. A drop-down menu will appear. Again, choose Open Browser from the drop-down menu. It will ask to highlight the browser, highlight the already opened browser and click on the top of the browser.
+2.	Go to gmail.com: You will be prompted to enter the URL of the website to navigate to. Type ‘gmail.com’ and press OK.
+3.	Sign In: Start recording by clicking on the Record icon of the recording panel. Go to the already open Gmail and click on the Email or Phone field. UiPath will pop up a prompt for typing the email
+Type Email in the box provided by the UiPath recorder and press Enter. The Gmail textbox will automatically fill up with your typed content. Click on the NEXT button of the Gmail interface; it will also get recorded.
+
+Type your password in the text field of the popup that appears. Then, click NEXT to log in to your account. Clicking on the NEXT button will also get recorded
+
+4.	Locate Trash Folder: Click on More button and from its dropdown Click on Trash Option.
+5.	Click on Empty Trash now: Once you are done with clicking on the Trash action, You can see a link showing Empty Trash now. Hover mouse on this link and it will get highlighted, click on it to delete all the messages in the Trash folder.
+6.	Confirm: When you click on Empty Trash now, a confirmation dialog will appear asking your permission for the action. Just confirm your action by clicking on the OK button.
+Now recording is complete, press Esc to get to the recording dialog. Click on the Save & Exit button
+
+Conclusion : Thus we have studied to Create an UiPath Robot which can empty a folder in Gmail solely on basis of recording.
+
+
+
+
+
+
+
+
+
+
+
+
