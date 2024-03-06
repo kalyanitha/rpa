@@ -1,0 +1,99 @@
+3a Create An Automation Uipath Project Using Decision Statements.
+If & Else Statement :
+
+This activity decides whether a certain activity or a block of activities will be executed or not. To explain you the functionality of this activity, let us create an automation task to find whether a number is even/odd.
+
+Find whether a number is even/odd
+Step 1: Drag a Input Dialog and mention the Title and Label. Here I want to mention the Input as number, so I have mentioned the Title as “Number” and Label as “Mention Number”. Refer below.
+
+Step 2: In the Properties pane of this activity, go to the output section and press on Ctrl + K to create a variable. Here I have created a variable ‘number’ of Int32 Type.
+
+Step 3: Drag an If activity and in the condition section mention number mod 2 = 0. After that, in the  Then section drag a message box and mention number.ToString + ” is a even number” and in the Else section drag a message box and mention number.ToString + ” is a odd number”. Refer below.
+
+
+When you execute this particular sequence you would get a input dialog to enter a number.If the number which you enter is even, then you will see an output that number is even else would see an output that number is odd.
+
+	Switch Activity
+
+This activity enables you to enables you to select one choice out of multiple, based on the value of a specified expression. To explain you the functionality of this activity, let us create an automation task to find whether sum of two numbers is even/odd.
+
+Sum of two numbers is even/odd
+Step 1: Drag a Input Dialog and mention the Title and Label. Here I want to mention the Input as the first number, so I have mentioned the Title as “Enter first number” and Label as “First Number”.
+
+Step 1.1: In the Properties pane of this activity, go to the output section and press on Ctrl + K to create a variable. Here I have created a variable ‘firstnumber‘ of Int32 Type.
+
+Step 2: Drag a Input Dialog again and mention the Title and Label. Here I want to mention the Input as the second number, so I have mentioned the Title as “Enter first number” and Label as “First Number”.
+
+Step 2.1: In the Properties pane of this activity, go to the output section and press on Ctrl + K to create a variable. Here I have created a variable ‘secondnumber‘ of Int32 Type. Refer below.
+
+Step 3: After that drag the Assign activity, and assign the To section to total and the value section to firstnumber + secondnumber. This will increase the counter by 1, until the condition is satisfied. (Here total is a variable of Int32 type, which you have to create).
+
+Step 4: Drag the Switch activity and in the Expression section mention total mod 2 = 0. Now, in the Default section drag a message box to display the output “Number is even”. Similarly in the Case 1 section drag a message box to display the output “Number is odd”.
+ 
+When you execute this particular sequence you would get two input dialog one after the other to to enter a number. If the sum of the numbers which you entered is even, then you will see an output that number is even else would see an output that number is odd.
+
+Conclusion :Thus we have studied to Create An Automation Uipath Project Using Decision Statements.
+
+
+
+
+
+
+
+
+
+
+
+
+3B] CreateAn Automation Uipath Project Using Looping Statements.
+
+ 
+For,While,Do While
+	While Activity
+
+This activity enables you to execute a specific process repeatedly, while a specific condition is met. To explain you the functionality of this activity, let us create an automation task to print the numbers 1-10.
+
+Print Numbers 1-10
+Step 1: Drag the While activity and in the condition section mention the condition count < 10. But, before that create the variable count.
+
+Step 2: In the Body section of this activity, drag an Assign activity, and assign the To section to count and the value section to count + 1 function. This will increase the counter by 1, until the condition is satisfied. Refer below.
+
+
+Step 3: Drag the Append Line activity and mention the File Name, where you want to store the Text that you will quote in this activity. Over here, I have mentioned the Text to be “The counter is now ” + count.ToString
++”.”. Refer below.
+
+
+Your final flow of execution and output will look like below.
+Now, let us move forward to the next activity i.e. Do-While activity.
+
+	Do While Activity
+
+This activity enables you to execute a specified part of your automation while a condition is met. To explain you the functionality of this activity, let us create an automation task to print the numbers 1-10.
+
+Print Numbers 1-10
+Step 1: Drag the Do-While activity and condition section mention the condition count < 10. But, before that create the variable count.
+
+Step 2: In the Body section of this activity, drag an Assign activity, and assign the To section to count and the value section to count + 1. This will increase the counter by 1, until the condition is satisfied. Refer below.
+
+
+Step 3: Drag the Append Line activity and mention the File Name, where you want to store the Text that you will quote in this activity. Over here, I have mentioned the Text to be “The counter is now ” + count.ToString
++”.”. Refer below
+Conclusion : Thus we have studied to Create An Automation Uipath Project Using Looping Statements.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
