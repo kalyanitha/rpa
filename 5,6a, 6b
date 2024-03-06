@@ -1,0 +1,75 @@
+5A] Consider an array of names. We have to find out how many of them start with the letter "a". Create an automation where the number of names starting with "a" is counted and the result is displayed
+
+STEPS :-
+
+1.	Drag and drop a Sequence activity inside the designer panel .
+2.	Create a variable. Give it a name (in our case, we will create an array of type string and namethe variable as “name”). Set the variable type to Array of [T].
+3.	Also, initialize the array in the Default section of the variable by giving it a default values.For example, {“vis” , “avi”, “sid” , “vvv” , “art"} .
+4.	Drag and drop a For each activity inside the Sequence. Also, specify the array name in theexpression box of the For each activity .
+5.	Drag and drop the If activity from the Activities panel and place it inside the For each activity
+. Specify the condition in the expression box of the If activity.
+6.	Now drag and drop the writeline acitivity and place In else condition of if activity & type item
+7.	Hit the Run button or press F5 and see the result
+Conclusion :Thus we have studied to Consider an array of names. We have to find out how many of them start with the letter "a". Create an automation where the number of names starting with "a" is counted and the result is displayed.
+
+
+
+
+
+
+6A] Create an application automating the read, write and append operation on excel file.
+Write Range Operation :- create the data table variable for build data table STEPS :-
+1.	Drag and drop a Flowchart activity on the main Designer panel.
+2.	Drag and drop a Build data table activity from the Activities panel. Double-click on this activity. A window will pop up. You will notice that two columns have been generated automatically. Delete these two columns. Add your column by clicking on the + icon and specify the column name. You can also select your preferred data type. You are free to addany number of columns:
+3.	Create a variable of type data table. Give it a meaningful name. 
+4.	Drag and drop an Excel application scope inside the main Designer panel. You can either specify the Excel sheet path or manually select it. Connect this activity to the Build Data Table activity. Inside the Excel application scope activity, just drag and drop the Write Rangeactivity:
+5.	Specify the data table variable name that we created earlier and set it as a Data table propertyinside the Write Range activity. We can also specify the range. In this case, we have assignedit as an empty string:
+6.	That's it. Hit the Run button or press F5 to see the result
+
+Append Range Operation :- create the data table variable for the read range – TableSTEPS :-
+1.	Drag and drop the Sequence activity on the main Designer window. Also, drag and drop theExcel application scope
+2.	Drag and drop the Read Range activity inside the Excel application scope activity. The Read Range activity produces a data table. We have to receive this data table in order to consume it.Create a data table variable and specify it in the Output property of the Read Range activity:
+3.	Drag and drop the Append Range activity inside the Excel application scope activity. Specifythe Excel file path in the Append Range activity & Also, specify the data table.
+
+1.	Also, specify the data table
+
+Conclusion : Thus we have studied to Create an application automating the read, write and append operation on excel file.
+
+
+
+ 
+
+6B] Automate the process to extract data from an excel file into a data table and vice versa.
+
+1.	Create a new sequence and give it a meaningful name.
+2.	Drag and drop the Excel Application Scope activity inside the sequence.
+3.	Double-click on the Excel application scope. You must specify the path of your workbook/Excel file. Drag and drop the Read Range activity from the Activities panel insidethe Excel application scope.
+The Read Range activity will read the entire Excel sheet. We also have the option of specifying our range. Create a variable of type data table and specify it in the Output propertyof the Read Range activity. This variable will receive the data table produced by the Read Range activity.
+4.	Drag and drop the Output Data Table activity inside the Excel application scope activity. Now, we must specify two properties of the Output Data Table activity: the Data Table property and the text property. The Data Table property of the Output Data Table activity isused to convert the Data Table into string format.
+The text property is used to supply its value in a string format. We have to receive this valuein order to consume it. For this, let us create a variable of type string. Give it a meaningful name
+
+1.	Drag and drop a Message box activity inside the Excel application scope activity. Also, specify the string variable's name that we created earlier inside the Message box activity.
+2.	Press F5 to see the result. A window displaying the Excel file data will pop up.
+OUTPUT :-
+
+Automate the process of writing a datatable data into an excel file
+1.	Add a sequence into project and give it a name.
+2.	Drag and drop an Excel Application Scope activity and inside it Drag and drop a Build data tableactivity from the Activities panel. Double-click on this activity. A window will pop up. Two columns have been generated automatically; delete these two columns. Add your column by clicking on the + icon and specify the column name. You can also select your preferred data type.You are free to add any number of columns
+3.	Create a variable of type Data Table. Give it a meaningful name. Specify this data table's name in the Data Table property of the Build data table activity. We must supply this variablein order to get the data table that we have built.
+4.	Drag and drop the Write Range activity. Specify the data table variable name that we createdearlier. We can also specify the range. In this case, we have assigned it as an empty string
+5.	Hit the Run button or press F5 to see the result
+
+OUTPUT :-
+Conclusion :Thus we have studied to Automate the process to extract data from an excel file into a data table and vice versa.
+
+
+
+
+
+
+
+
+
+
+
+
